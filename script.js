@@ -1,3 +1,16 @@
+let firstNumber = ""; 
+let secondNumber = "";
+let operator = '';
+let isResult = false;
+const display = document.querySelector(".display");
+const dot = document.querySelector("#dot");
+const operateButtons = document.querySelectorAll(".operator");
+const digitButtons = document.querySelectorAll(".digit");
+const equalButton = document.querySelector("#equal");
+const clear = document.querySelector("#clear");
+const backspace = document.querySelector("#backspace");
+ 
+
 function add(a, b) {
     return a + b;
 }
@@ -45,18 +58,6 @@ function formatNumber(num) {
     return numStr;
 }
 
-let firstNumber = ""; 
-let secondNumber = "";
-let operator = '';
-let isResult = false;
-const display = document.querySelector(".display");
-const dot = document.querySelector("#dot");
-const operateButtons = document.querySelectorAll(".operator");
-const digitButtons = document.querySelectorAll(".digit");
-const equalButton = document.querySelector("#equal");
-const clear = document.querySelector("#clear");
-const backspace = document.querySelector("#backspace");
- 
 
 document.addEventListener("keydown", (event) => {
     const key = event.key;

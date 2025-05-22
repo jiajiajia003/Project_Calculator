@@ -17,6 +17,7 @@ button {
     height: 650px;
     padding: 20px;
     background-color: black;
+    margin: auto;
 }
 
 .display {
