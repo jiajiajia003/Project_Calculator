@@ -1,0 +1,64 @@
+* {
+    box-sizing: content-box;
+    color: white;
+}
+
+.calculator,
+.display,
+button {
+    border-radius: 20px;
+}
+
+.calculator {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 400px;
+    height: 650px;
+    padding: 20px;
+    background-color: black;
+}
+
+.display {
+    flex: auto;
+    padding: 20px;
+    height: 100px;
+    background-color: grey;
+    margin: 5px;
+    font-size: 50px;
+    
+}
+
+.keyboard {
+    display: flex;
+    flex-direction: column;
+    height: 500px;
+}
+
+.keyRow {
+    flex: auto;
+    display: flex;
+}
+
+button {
+    flex: 1;
+    font-size: xx-large;
+    background-color: darkgrey;
+    margin: 5px;
+}
+
+#clear,
+#key0 {
+    flex: 2;
+}
+
+.operator,
+#equal {
+    background-color: orange;
+}
+
+#backspace,
+#clear {
+    background-color: lightgray;
+}
+
